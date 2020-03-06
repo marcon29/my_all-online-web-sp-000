@@ -17,7 +17,7 @@ end
 
 
 # school solution - more abstract so modular
-#      i.e. this could easily be changed to mimic the .none method by simply 
+#      i.e. this could easily be changed to mimic the .none method by simply
 #      changing the .include conditional to look for true instead of false
 #           example: if block_return_values.include?(true)
 # my solution would require changing multiple conditions/values and the variable name for clairity
