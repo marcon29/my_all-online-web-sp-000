@@ -21,3 +21,18 @@ end
 #      changing the .include conditional to look for true instead of false
 #           example: if block_return_values.include?(true)
 # my solution would require changing multiple conditions/values and the variable name for clairity
+def my_all?(collection)
+  block_return_values = []
+
+  i = 0
+  while i < collection.length
+    block_return_values << yield(collection[i])
+    i = i + 1
+  end
+ 
+  if block_return_values.include?(false)
+    false
+  else
+    true
+  end
+end
